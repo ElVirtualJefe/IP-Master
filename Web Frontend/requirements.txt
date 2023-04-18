@@ -1,0 +1,2 @@
+grpcio-tools >= 1.30
+ConfigParser>=5.2.0
