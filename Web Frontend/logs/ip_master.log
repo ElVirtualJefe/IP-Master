@@ -1,0 +1,1672 @@
+2023-04-18T09:30:30.737Z ip-master MainProcess[20580]: DEBUG >>> Remote syslog is disabled
+2023-04-18T09:30:30.739Z ip-master MainProcess[20580]: INFO >>> Extra logging configuration completed
+2023-04-18T09:30:30.740Z ip-master MainProcess[20580]: INFO >>> Loading IP Master app...
+2023-04-18T09:30:31.132Z ip-master MainProcess[20580]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 710, in __init__
+    self.server_bind()
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\http\server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 11, in server
+    app.run(host='0.0.0.0',debug=True,port=80)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1037, in run_simple
+    srv = make_server(
+          ^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 877, in make_server
+    return ThreadedWSGIServer(
+           ^^^^^^^^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 733, in __init__
+    sys.exit(1)
+SystemExit: 1
+2023-04-18T09:30:31.144Z ip-master MainProcess[20580]: INFO >>> Closing IP Master app...
+2023-04-18T09:49:15.748Z ip-master MainProcess[13768]: DEBUG >>> Remote syslog is disabled
+2023-04-18T09:49:15.748Z ip-master MainProcess[13768]: INFO >>> Extra logging configuration completed
+2023-04-18T09:49:15.749Z ip-master MainProcess[13768]: INFO >>> Loading IP Master app...
+2023-04-18T09:49:17.25Z ip-master MainProcess[26584]: DEBUG >>> Remote syslog is disabled
+2023-04-18T09:49:17.26Z ip-master MainProcess[26584]: INFO >>> Extra logging configuration completed
+2023-04-18T09:49:17.26Z ip-master MainProcess[26584]: INFO >>> Loading IP Master app...
+2023-04-18T10:42:20.522Z ip-master MainProcess[26584]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 15, in server
+    def server(config):
+        ^^^^^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T10:42:20.532Z ip-master MainProcess[26584]: INFO >>> Closing IP Master app...
+2023-04-18T10:42:20.592Z ip-master MainProcess[13768]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 15, in server
+    def server(config):
+        ^^^^^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T10:42:20.601Z ip-master MainProcess[13768]: INFO >>> Closing IP Master app...
+2023-04-18T10:44:08.850Z ip-master MainProcess[23060]: DEBUG >>> Remote syslog is disabled
+2023-04-18T10:44:08.852Z ip-master MainProcess[23060]: INFO >>> Extra logging configuration completed
+2023-04-18T10:44:08.853Z ip-master MainProcess[23060]: INFO >>> Loading IP Master app...
+2023-04-18T10:44:08.862Z ip-master.app MainProcess[23060]: DEBUG >>> Entering module app
+2023-04-18T10:44:09.301Z ip-master.app MainProcess[23060]: DEBUG >>> Inside function app.server
+2023-04-18T10:44:09.302Z ip-master.app MainProcess[23060]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T10:44:10.245Z ip-master MainProcess[20120]: DEBUG >>> Remote syslog is disabled
+2023-04-18T10:44:10.246Z ip-master MainProcess[20120]: INFO >>> Extra logging configuration completed
+2023-04-18T10:44:10.249Z ip-master MainProcess[20120]: INFO >>> Loading IP Master app...
+2023-04-18T10:44:10.250Z ip-master.app MainProcess[20120]: DEBUG >>> Entering module app
+2023-04-18T10:44:10.696Z ip-master.app MainProcess[20120]: DEBUG >>> Inside function app.server
+2023-04-18T10:44:10.696Z ip-master.app MainProcess[20120]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T10:48:37.88Z ip-master MainProcess[20120]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 24, in server
+    port = config.get('server','PORT')
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T10:48:37.93Z ip-master MainProcess[20120]: INFO >>> Closing IP Master app...
+2023-04-18T10:48:37.153Z ip-master MainProcess[23060]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 24, in server
+    port = config.get('server','PORT')
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T10:48:37.158Z ip-master MainProcess[23060]: INFO >>> Closing IP Master app...
+2023-04-18T10:48:43.76Z ip-master MainProcess[35484]: DEBUG >>> Remote syslog is disabled
+2023-04-18T10:48:43.77Z ip-master MainProcess[35484]: INFO >>> Extra logging configuration completed
+2023-04-18T10:48:43.78Z ip-master MainProcess[35484]: INFO >>> Loading IP Master app...
+2023-04-18T10:48:43.86Z ip-master.app MainProcess[35484]: DEBUG >>> Entering module app
+2023-04-18T10:48:43.479Z ip-master.app MainProcess[35484]: DEBUG >>> Inside function app.server
+2023-04-18T10:48:43.479Z ip-master.app MainProcess[35484]: DEBUG >>> Importing views
+2023-04-18T10:48:43.486Z ip-master.app MainProcess[35484]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T10:48:44.201Z ip-master MainProcess[34832]: DEBUG >>> Remote syslog is disabled
+2023-04-18T10:48:44.202Z ip-master MainProcess[34832]: INFO >>> Extra logging configuration completed
+2023-04-18T10:48:44.203Z ip-master MainProcess[34832]: INFO >>> Loading IP Master app...
+2023-04-18T10:48:44.205Z ip-master.app MainProcess[34832]: DEBUG >>> Entering module app
+2023-04-18T10:48:44.571Z ip-master.app MainProcess[34832]: DEBUG >>> Inside function app.server
+2023-04-18T10:48:44.572Z ip-master.app MainProcess[34832]: DEBUG >>> Importing views
+2023-04-18T10:48:44.575Z ip-master.app MainProcess[34832]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T10:51:38.6Z ip-master MainProcess[34832]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    address = config.get('server','ADDRESS')
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T10:51:38.13Z ip-master MainProcess[34832]: INFO >>> Closing IP Master app...
+2023-04-18T10:51:38.77Z ip-master MainProcess[35484]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    address = config.get('server','ADDRESS')
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T10:51:38.86Z ip-master MainProcess[35484]: INFO >>> Closing IP Master app...
+2023-04-18T10:51:51.330Z ip-master MainProcess[36396]: DEBUG >>> Remote syslog is disabled
+2023-04-18T10:51:51.331Z ip-master MainProcess[36396]: INFO >>> Extra logging configuration completed
+2023-04-18T10:51:51.334Z ip-master MainProcess[36396]: INFO >>> Loading IP Master app...
+2023-04-18T10:51:51.345Z ip-master.app MainProcess[36396]: DEBUG >>> Entering module app
+2023-04-18T10:51:51.780Z ip-master.app MainProcess[36396]: DEBUG >>> Inside function app.server
+2023-04-18T10:51:51.780Z ip-master.app MainProcess[36396]: DEBUG >>> Setting App configuration items
+2023-04-18T10:51:51.781Z ip-master MainProcess[36396]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 21, in server
+    app.config['SECRET_KEY'] = config.get('general','SECRET_KEY')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 815, in get
+    return self._interpolation.before_get(self, section, option, value,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 396, in before_get
+    self._interpolate_some(parser, option, L, value, section, defaults, 1)
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\configparser.py", line 443, in _interpolate_some
+    raise InterpolationSyntaxError(
+configparser.InterpolationSyntaxError: '%' must be followed by '%' or '(', found: '%,\\xf7\\xc4\\xfa\\x91"'
+2023-04-18T10:51:51.787Z ip-master MainProcess[36396]: INFO >>> Closing IP Master app...
+2023-04-18T11:00:39.418Z ip-master MainProcess[32440]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:00:39.419Z ip-master MainProcess[32440]: INFO >>> Extra logging configuration completed
+2023-04-18T11:00:39.420Z ip-master MainProcess[32440]: INFO >>> Loading IP Master app...
+2023-04-18T11:00:39.423Z ip-master.app MainProcess[32440]: DEBUG >>> Entering module app
+2023-04-18T11:00:39.823Z ip-master.app MainProcess[32440]: DEBUG >>> Inside function app.server
+2023-04-18T11:00:39.824Z ip-master.app MainProcess[32440]: DEBUG >>> Setting App configuration items
+2023-04-18T11:00:39.824Z ip-master.app MainProcess[32440]: DEBUG >>> Importing views
+2023-04-18T11:00:39.827Z ip-master.app MainProcess[32440]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:00:40.663Z ip-master MainProcess[20292]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:00:40.664Z ip-master MainProcess[20292]: INFO >>> Extra logging configuration completed
+2023-04-18T11:00:40.665Z ip-master MainProcess[20292]: INFO >>> Loading IP Master app...
+2023-04-18T11:00:40.670Z ip-master.app MainProcess[20292]: DEBUG >>> Entering module app
+2023-04-18T11:00:41.106Z ip-master.app MainProcess[20292]: DEBUG >>> Inside function app.server
+2023-04-18T11:00:41.107Z ip-master.app MainProcess[20292]: DEBUG >>> Setting App configuration items
+2023-04-18T11:00:41.108Z ip-master.app MainProcess[20292]: DEBUG >>> Importing views
+2023-04-18T11:00:41.111Z ip-master.app MainProcess[20292]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:00:59.623Z ip-master MainProcess[20292]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 31, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T11:00:59.629Z ip-master MainProcess[20292]: INFO >>> Closing IP Master app...
+2023-04-18T11:00:59.694Z ip-master MainProcess[32440]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 31, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T11:00:59.703Z ip-master MainProcess[32440]: INFO >>> Closing IP Master app...
+2023-04-18T11:01:02.380Z ip-master MainProcess[22044]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:01:02.381Z ip-master MainProcess[22044]: INFO >>> Extra logging configuration completed
+2023-04-18T11:01:02.382Z ip-master MainProcess[22044]: INFO >>> Loading IP Master app...
+2023-04-18T11:01:02.390Z ip-master.app MainProcess[22044]: DEBUG >>> Entering module app
+2023-04-18T11:01:02.744Z ip-master.app MainProcess[22044]: DEBUG >>> Inside function app.server
+2023-04-18T11:01:02.744Z ip-master.app MainProcess[22044]: DEBUG >>> Setting App configuration items
+2023-04-18T11:01:02.745Z ip-master.app MainProcess[22044]: DEBUG >>> Importing views
+2023-04-18T11:01:02.748Z ip-master.app MainProcess[22044]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:01:03.539Z ip-master MainProcess[15264]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:01:03.539Z ip-master MainProcess[15264]: INFO >>> Extra logging configuration completed
+2023-04-18T11:01:03.540Z ip-master MainProcess[15264]: INFO >>> Loading IP Master app...
+2023-04-18T11:01:03.541Z ip-master.app MainProcess[15264]: DEBUG >>> Entering module app
+2023-04-18T11:01:03.935Z ip-master.app MainProcess[15264]: DEBUG >>> Inside function app.server
+2023-04-18T11:01:03.936Z ip-master.app MainProcess[15264]: DEBUG >>> Setting App configuration items
+2023-04-18T11:01:03.937Z ip-master.app MainProcess[15264]: DEBUG >>> Importing views
+2023-04-18T11:01:03.940Z ip-master.app MainProcess[15264]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:01:46.575Z ip-master MainProcess[15264]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 31, in server
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T11:01:46.582Z ip-master MainProcess[15264]: INFO >>> Closing IP Master app...
+2023-04-18T11:01:46.683Z ip-master MainProcess[22044]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 31, in server
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T11:01:46.692Z ip-master MainProcess[22044]: INFO >>> Closing IP Master app...
+2023-04-18T11:15:53.252Z ip-master MainProcess[29980]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:15:53.254Z ip-master MainProcess[29980]: INFO >>> Extra logging configuration completed
+2023-04-18T11:15:53.254Z ip-master MainProcess[29980]: INFO >>> Loading IP Master app...
+2023-04-18T11:15:53.264Z ip-master.app MainProcess[29980]: DEBUG >>> Entering module app
+2023-04-18T11:15:53.695Z ip-master.app MainProcess[29980]: DEBUG >>> Inside function app.server
+2023-04-18T11:15:53.696Z ip-master.app MainProcess[29980]: DEBUG >>> Setting App configuration items
+2023-04-18T11:15:53.697Z ip-master.app MainProcess[29980]: DEBUG >>> Importing views
+2023-04-18T11:15:53.700Z ip-master.app MainProcess[29980]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:15:54.704Z ip-master MainProcess[22112]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:15:54.706Z ip-master MainProcess[22112]: INFO >>> Extra logging configuration completed
+2023-04-18T11:15:54.707Z ip-master MainProcess[22112]: INFO >>> Loading IP Master app...
+2023-04-18T11:15:54.711Z ip-master.app MainProcess[22112]: DEBUG >>> Entering module app
+2023-04-18T11:15:55.338Z ip-master.app MainProcess[22112]: DEBUG >>> Inside function app.server
+2023-04-18T11:15:55.340Z ip-master.app MainProcess[22112]: DEBUG >>> Setting App configuration items
+2023-04-18T11:15:55.341Z ip-master.app MainProcess[22112]: DEBUG >>> Importing views
+2023-04-18T11:15:55.356Z ip-master.app MainProcess[22112]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:22:09.726Z ip-master MainProcess[22112]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T11:22:09.736Z ip-master MainProcess[22112]: INFO >>> Closing IP Master app...
+2023-04-18T11:22:09.833Z ip-master MainProcess[29980]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T11:22:09.841Z ip-master MainProcess[29980]: INFO >>> Closing IP Master app...
+2023-04-18T11:54:12.648Z ip-master MainProcess[31944]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:54:12.649Z ip-master MainProcess[31944]: INFO >>> Extra logging configuration completed
+2023-04-18T11:54:12.652Z ip-master MainProcess[31944]: INFO >>> Loading IP Master app...
+2023-04-18T11:54:12.682Z ip-master.app MainProcess[31944]: DEBUG >>> Entering module app
+2023-04-18T11:54:13.725Z ip-master.app MainProcess[31944]: DEBUG >>> Inside function app.server
+2023-04-18T11:54:13.725Z ip-master.app MainProcess[31944]: DEBUG >>> Setting App configuration items
+2023-04-18T11:54:13.727Z ip-master.app MainProcess[31944]: DEBUG >>> Importing views
+2023-04-18T11:54:13.731Z ip-master.app MainProcess[31944]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T11:54:14.496Z ip-master MainProcess[27800]: DEBUG >>> Remote syslog is disabled
+2023-04-18T11:54:14.498Z ip-master MainProcess[27800]: INFO >>> Extra logging configuration completed
+2023-04-18T11:54:14.499Z ip-master MainProcess[27800]: INFO >>> Loading IP Master app...
+2023-04-18T11:54:14.501Z ip-master.app MainProcess[27800]: DEBUG >>> Entering module app
+2023-04-18T11:54:14.937Z ip-master.app MainProcess[27800]: DEBUG >>> Inside function app.server
+2023-04-18T11:54:14.938Z ip-master.app MainProcess[27800]: DEBUG >>> Setting App configuration items
+2023-04-18T11:54:14.939Z ip-master.app MainProcess[27800]: DEBUG >>> Importing views
+2023-04-18T11:54:14.943Z ip-master.app MainProcess[27800]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T12:24:55.759Z ip-master MainProcess[27800]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-18T12:24:55.767Z ip-master MainProcess[27800]: INFO >>> Closing IP Master app...
+2023-04-18T12:24:55.836Z ip-master MainProcess[31944]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-18T12:24:55.841Z ip-master MainProcess[31944]: INFO >>> Closing IP Master app...
+2023-04-18T12:25:00.355Z ip-master MainProcess[34596]: DEBUG >>> Remote syslog is disabled
+2023-04-18T12:25:00.356Z ip-master MainProcess[34596]: INFO >>> Extra logging configuration completed
+2023-04-18T12:25:00.357Z ip-master MainProcess[34596]: INFO >>> Loading IP Master app...
+2023-04-18T12:25:00.360Z ip-master.app MainProcess[34596]: DEBUG >>> Entering module app
+2023-04-18T12:25:00.851Z ip-master.app MainProcess[34596]: DEBUG >>> Inside function app.server
+2023-04-18T12:25:00.851Z ip-master.app MainProcess[34596]: DEBUG >>> Setting App configuration items
+2023-04-18T12:25:00.852Z ip-master.app MainProcess[34596]: DEBUG >>> Importing views
+2023-04-18T12:25:00.861Z ip-master.app MainProcess[34596]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-18T12:25:01.644Z ip-master MainProcess[32740]: DEBUG >>> Remote syslog is disabled
+2023-04-18T12:25:01.645Z ip-master MainProcess[32740]: INFO >>> Extra logging configuration completed
+2023-04-18T12:25:01.645Z ip-master MainProcess[32740]: INFO >>> Loading IP Master app...
+2023-04-18T12:25:01.649Z ip-master.app MainProcess[32740]: DEBUG >>> Entering module app
+2023-04-18T12:25:02.28Z ip-master.app MainProcess[32740]: DEBUG >>> Inside function app.server
+2023-04-18T12:25:02.29Z ip-master.app MainProcess[32740]: DEBUG >>> Setting App configuration items
+2023-04-18T12:25:02.30Z ip-master.app MainProcess[32740]: DEBUG >>> Importing views
+2023-04-18T12:25:02.32Z ip-master.app MainProcess[32740]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T09:57:05.692Z ip-master MainProcess[9568]: DEBUG >>> Remote syslog is disabled
+2023-04-19T09:57:05.692Z ip-master MainProcess[9568]: INFO >>> Extra logging configuration completed
+2023-04-19T09:57:05.701Z ip-master MainProcess[9568]: INFO >>> Loading IP Master app...
+2023-04-19T09:57:05.703Z ip-master.app MainProcess[9568]: DEBUG >>> Entering module app
+2023-04-19T09:57:06.98Z ip-master.app MainProcess[9568]: DEBUG >>> Inside function app.server
+2023-04-19T09:57:06.98Z ip-master.app MainProcess[9568]: DEBUG >>> Setting App configuration items
+2023-04-19T09:57:06.99Z ip-master.app MainProcess[9568]: DEBUG >>> Importing views
+2023-04-19T09:57:06.99Z ip-master MainProcess[9568]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 21, in server
+    from app import views
+ImportError: cannot import name 'views' from 'app' (C:\Code\IP Master\Web Frontend\app\__init__.py)
+2023-04-19T09:57:06.102Z ip-master MainProcess[9568]: INFO >>> Closing IP Master app...
+2023-04-19T10:00:29.449Z ip-master MainProcess[38004]: DEBUG >>> Remote syslog is disabled
+2023-04-19T10:00:29.449Z ip-master MainProcess[38004]: INFO >>> Extra logging configuration completed
+2023-04-19T10:00:29.450Z ip-master MainProcess[38004]: INFO >>> Loading IP Master app...
+2023-04-19T10:00:29.458Z ip-master.app MainProcess[38004]: DEBUG >>> Entering module app
+2023-04-19T10:00:29.729Z ip-master.app MainProcess[38004]: DEBUG >>> Inside function app.server
+2023-04-19T10:00:29.729Z ip-master.app MainProcess[38004]: DEBUG >>> Setting App configuration items
+2023-04-19T10:00:29.730Z ip-master.app MainProcess[38004]: DEBUG >>> Importing views
+2023-04-19T10:00:29.730Z ip-master.app MainProcess[38004]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T10:00:30.427Z ip-master MainProcess[6556]: DEBUG >>> Remote syslog is disabled
+2023-04-19T10:00:30.428Z ip-master MainProcess[6556]: INFO >>> Extra logging configuration completed
+2023-04-19T10:00:30.429Z ip-master MainProcess[6556]: INFO >>> Loading IP Master app...
+2023-04-19T10:00:30.430Z ip-master.app MainProcess[6556]: DEBUG >>> Entering module app
+2023-04-19T10:00:30.793Z ip-master.app MainProcess[6556]: DEBUG >>> Inside function app.server
+2023-04-19T10:00:30.794Z ip-master.app MainProcess[6556]: DEBUG >>> Setting App configuration items
+2023-04-19T10:00:30.794Z ip-master.app MainProcess[6556]: DEBUG >>> Importing views
+2023-04-19T10:00:30.794Z ip-master.app MainProcess[6556]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T10:17:07.65Z ip-master MainProcess[6556]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T10:17:07.73Z ip-master MainProcess[6556]: INFO >>> Closing IP Master app...
+2023-04-19T10:17:07.130Z ip-master MainProcess[38004]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 27, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T10:17:07.137Z ip-master MainProcess[38004]: INFO >>> Closing IP Master app...
+2023-04-19T10:59:13.389Z ip-master MainProcess[40736]: DEBUG >>> Remote syslog is disabled
+2023-04-19T10:59:13.389Z ip-master MainProcess[40736]: INFO >>> Extra logging configuration completed
+2023-04-19T10:59:13.390Z ip-master MainProcess[40736]: INFO >>> Loading IP Master app...
+2023-04-19T10:59:13.397Z ip-master.app MainProcess[40736]: DEBUG >>> Entering module app
+2023-04-19T10:59:13.773Z ip-master.app MainProcess[40736]: DEBUG >>> Inside function app.server
+2023-04-19T10:59:13.774Z ip-master.app MainProcess[40736]: DEBUG >>> Inside function app.create_app
+2023-04-19T10:59:13.777Z ip-master.app MainProcess[40736]: DEBUG >>> Setting App configuration items
+2023-04-19T10:59:13.778Z ip-master MainProcess[40736]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 49, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 40, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 21, in register_blueprints
+    module = import_module('apps.{}.routes'.format(module_name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T10:59:13.783Z ip-master MainProcess[40736]: INFO >>> Closing IP Master app...
+2023-04-19T11:00:21.901Z ip-master MainProcess[2560]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:00:21.902Z ip-master MainProcess[2560]: INFO >>> Extra logging configuration completed
+2023-04-19T11:00:21.902Z ip-master MainProcess[2560]: INFO >>> Loading IP Master app...
+2023-04-19T11:00:21.910Z ip-master.app MainProcess[2560]: DEBUG >>> Entering module app
+2023-04-19T11:00:22.188Z ip-master.app MainProcess[2560]: DEBUG >>> Inside function app.server
+2023-04-19T11:00:22.188Z ip-master.app MainProcess[2560]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:00:22.190Z ip-master.app MainProcess[2560]: DEBUG >>> Setting App configuration items
+2023-04-19T11:00:22.192Z ip-master MainProcess[2560]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 117, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 50, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 41, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 22, in register_blueprints
+    module = import_module('apps.{}.routes'.format(module_name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T11:00:22.199Z ip-master MainProcess[2560]: INFO >>> Closing IP Master app...
+2023-04-19T11:38:11.660Z ip-master MainProcess[33084]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:38:11.660Z ip-master MainProcess[33084]: INFO >>> Extra logging configuration completed
+2023-04-19T11:38:11.660Z ip-master MainProcess[33084]: INFO >>> Loading IP Master app...
+2023-04-19T11:38:11.661Z ip-master.app MainProcess[33084]: DEBUG >>> Inside function app.server
+2023-04-19T11:38:11.663Z ip-master.app MainProcess[33084]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:38:11.664Z ip-master.app MainProcess[33084]: DEBUG >>> Setting App configuration items
+2023-04-19T11:38:11.666Z ip-master MainProcess[33084]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 50, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 41, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 22, in register_blueprints
+    module = import_module('apps.{}.routes'.format(module_name))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T11:38:11.670Z ip-master MainProcess[33084]: INFO >>> Closing IP Master app...
+2023-04-19T11:45:10.865Z ip-master MainProcess[26024]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:45:10.865Z ip-master MainProcess[26024]: INFO >>> Extra logging configuration completed
+2023-04-19T11:45:10.867Z ip-master MainProcess[26024]: INFO >>> Loading IP Master app...
+2023-04-19T11:45:10.867Z ip-master.app MainProcess[26024]: DEBUG >>> Inside function app.server
+2023-04-19T11:45:10.868Z ip-master.app MainProcess[26024]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:45:10.871Z ip-master.app MainProcess[26024]: DEBUG >>> Setting App configuration items
+2023-04-19T11:45:10.873Z ip-master.app MainProcess[26024]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:45:10.874Z ip-master MainProcess[26024]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 53, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 44, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 22, in register_blueprints
+    module = import_module(f'apps.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T11:45:10.880Z ip-master MainProcess[26024]: INFO >>> Closing IP Master app...
+2023-04-19T11:46:18.918Z ip-master MainProcess[32988]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:46:18.918Z ip-master MainProcess[32988]: INFO >>> Extra logging configuration completed
+2023-04-19T11:46:18.918Z ip-master MainProcess[32988]: INFO >>> Loading IP Master app...
+2023-04-19T11:46:18.920Z ip-master.app MainProcess[32988]: DEBUG >>> Inside function app.server
+2023-04-19T11:46:18.920Z ip-master.app MainProcess[32988]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:46:18.923Z ip-master.app MainProcess[32988]: DEBUG >>> Setting App configuration items
+2023-04-19T11:46:18.924Z ip-master.app MainProcess[32988]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:46:18.924Z ip-master.app MainProcess[32988]: DEBUG >>> Importing Module apps.authentication.routes
+2023-04-19T11:46:18.926Z ip-master MainProcess[32988]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 54, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 45, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 23, in register_blueprints
+    module = import_module(f'apps.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1128, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1142, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T11:46:18.930Z ip-master MainProcess[32988]: INFO >>> Closing IP Master app...
+2023-04-19T11:46:33.283Z ip-master MainProcess[35520]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:46:33.283Z ip-master MainProcess[35520]: INFO >>> Extra logging configuration completed
+2023-04-19T11:46:33.283Z ip-master MainProcess[35520]: INFO >>> Loading IP Master app...
+2023-04-19T11:46:33.284Z ip-master.app MainProcess[35520]: DEBUG >>> Inside function app.server
+2023-04-19T11:46:33.285Z ip-master.app MainProcess[35520]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:46:33.286Z ip-master.app MainProcess[35520]: DEBUG >>> Setting App configuration items
+2023-04-19T11:46:33.287Z ip-master.app MainProcess[35520]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:46:33.288Z ip-master.app MainProcess[35520]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T11:46:33.315Z ip-master MainProcess[35520]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 54, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 45, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 23, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 13, in <module>
+    from flask_dance.contrib.github import github
+ModuleNotFoundError: No module named 'flask_dance'
+2023-04-19T11:46:33.320Z ip-master MainProcess[35520]: INFO >>> Closing IP Master app...
+2023-04-19T11:47:49.328Z ip-master MainProcess[29508]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:47:49.329Z ip-master MainProcess[29508]: INFO >>> Extra logging configuration completed
+2023-04-19T11:47:49.329Z ip-master MainProcess[29508]: INFO >>> Loading IP Master app...
+2023-04-19T11:47:49.330Z ip-master.app MainProcess[29508]: DEBUG >>> Inside function app.server
+2023-04-19T11:47:49.332Z ip-master.app MainProcess[29508]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:47:49.335Z ip-master.app MainProcess[29508]: DEBUG >>> Setting App configuration items
+2023-04-19T11:47:49.336Z ip-master.app MainProcess[29508]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:47:49.337Z ip-master.app MainProcess[29508]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T11:47:49.353Z ip-master MainProcess[29508]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 54, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 45, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 23, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 14, in <module>
+    from app import login_manager
+ImportError: cannot import name 'login_manager' from 'app' (C:\Code\IP Master\Web Frontend\app\__init__.py)
+2023-04-19T11:47:49.357Z ip-master MainProcess[29508]: INFO >>> Closing IP Master app...
+2023-04-19T11:48:37.659Z ip-master MainProcess[30516]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:48:37.659Z ip-master MainProcess[30516]: INFO >>> Extra logging configuration completed
+2023-04-19T11:48:37.659Z ip-master MainProcess[30516]: INFO >>> Loading IP Master app...
+2023-04-19T11:48:37.660Z ip-master.app MainProcess[30516]: DEBUG >>> Inside function app.server
+2023-04-19T11:48:37.661Z ip-master.app MainProcess[30516]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:48:37.662Z ip-master.app MainProcess[30516]: DEBUG >>> Setting App configuration items
+2023-04-19T11:48:37.663Z ip-master.app MainProcess[30516]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:48:37.663Z ip-master.app MainProcess[30516]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T11:48:37.671Z ip-master MainProcess[30516]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 57, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 48, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 26, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 16, in <module>
+    from app.authentication.forms import LoginForm, CreateAccountForm
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 6, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+2023-04-19T11:48:37.676Z ip-master MainProcess[30516]: INFO >>> Closing IP Master app...
+2023-04-19T11:50:58.573Z ip-master MainProcess[29308]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:50:58.574Z ip-master MainProcess[29308]: INFO >>> Extra logging configuration completed
+2023-04-19T11:50:58.574Z ip-master MainProcess[29308]: INFO >>> Loading IP Master app...
+2023-04-19T11:50:58.576Z ip-master.app MainProcess[29308]: DEBUG >>> Inside function app.server
+2023-04-19T11:50:58.576Z ip-master.app MainProcess[29308]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:50:58.578Z ip-master.app MainProcess[29308]: DEBUG >>> Setting App configuration items
+2023-04-19T11:50:58.578Z ip-master.app MainProcess[29308]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:50:58.579Z ip-master.app MainProcess[29308]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T11:50:58.584Z ip-master MainProcess[29308]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 57, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 48, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 26, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 16, in <module>
+    from app.authentication.forms import LoginForm, CreateAccountForm
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 6, in <module>
+    from flask_wtf import FlaskForm
+ModuleNotFoundError: No module named 'flask_wtf'
+2023-04-19T11:50:58.591Z ip-master MainProcess[29308]: INFO >>> Closing IP Master app...
+2023-04-19T11:53:19.504Z ip-master MainProcess[8628]: DEBUG >>> Remote syslog is disabled
+2023-04-19T11:53:19.505Z ip-master MainProcess[8628]: INFO >>> Extra logging configuration completed
+2023-04-19T11:53:19.507Z ip-master MainProcess[8628]: INFO >>> Loading IP Master app...
+2023-04-19T11:53:19.508Z ip-master.app MainProcess[8628]: DEBUG >>> Inside function app.server
+2023-04-19T11:53:19.509Z ip-master.app MainProcess[8628]: DEBUG >>> Inside function app.create_app
+2023-04-19T11:53:19.512Z ip-master.app MainProcess[8628]: DEBUG >>> Setting App configuration items
+2023-04-19T11:53:19.513Z ip-master.app MainProcess[8628]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T11:53:19.514Z ip-master.app MainProcess[8628]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T11:53:19.556Z ip-master MainProcess[8628]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 57, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 48, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 26, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 16, in <module>
+    from app.authentication.forms import LoginForm, CreateAccountForm
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 22, in <module>
+    class CreateAccountForm(FlaskForm):
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 28, in CreateAccountForm
+    validators=[DataRequired(), Email()])
+                                ^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\wtforms\validators.py", line 393, in __init__
+    raise Exception("Install 'email_validator' for email validation support.")
+Exception: Install 'email_validator' for email validation support.
+2023-04-19T11:53:19.563Z ip-master MainProcess[8628]: INFO >>> Closing IP Master app...
+2023-04-19T12:08:04.572Z ip-master MainProcess[24148]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:08:04.573Z ip-master MainProcess[24148]: INFO >>> Extra logging configuration completed
+2023-04-19T12:08:04.573Z ip-master MainProcess[24148]: INFO >>> Loading IP Master app...
+2023-04-19T12:08:04.575Z ip-master.app MainProcess[24148]: DEBUG >>> Inside function app.server
+2023-04-19T12:08:04.575Z ip-master.app MainProcess[24148]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:08:04.577Z ip-master.app MainProcess[24148]: DEBUG >>> Setting App configuration items
+2023-04-19T12:08:04.578Z ip-master.app MainProcess[24148]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:08:04.578Z ip-master.app MainProcess[24148]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:08:04.612Z ip-master MainProcess[24148]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 57, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 48, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 26, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 16, in <module>
+    from app.authentication.forms import LoginForm, CreateAccountForm
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 22, in <module>
+    class CreateAccountForm(FlaskForm):
+  File "C:\Code\IP Master\Web Frontend\app\authentication\forms.py", line 28, in CreateAccountForm
+    validators=[DataRequired(), Email()])
+                                ^^^^^^^
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\wtforms\validators.py", line 393, in __init__
+    raise Exception("Install 'email_validator' for email validation support.")
+Exception: Install 'email_validator' for email validation support.
+2023-04-19T12:08:04.617Z ip-master MainProcess[24148]: INFO >>> Closing IP Master app...
+2023-04-19T12:09:46.182Z ip-master MainProcess[16948]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:09:46.184Z ip-master MainProcess[16948]: INFO >>> Extra logging configuration completed
+2023-04-19T12:09:46.185Z ip-master MainProcess[16948]: INFO >>> Loading IP Master app...
+2023-04-19T12:09:46.186Z ip-master.app MainProcess[16948]: DEBUG >>> Inside function app.server
+2023-04-19T12:09:46.188Z ip-master.app MainProcess[16948]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:09:46.190Z ip-master.app MainProcess[16948]: DEBUG >>> Setting App configuration items
+2023-04-19T12:09:46.190Z ip-master.app MainProcess[16948]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:09:46.191Z ip-master.app MainProcess[16948]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:09:46.264Z ip-master.app MainProcess[16948]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:09:46.267Z ip-master.app MainProcess[16948]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:09:46.276Z ip-master MainProcess[16948]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 57, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 48, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 26, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\home\routes.py", line 6, in <module>
+    from apps.home import blueprint
+ModuleNotFoundError: No module named 'apps'
+2023-04-19T12:09:46.281Z ip-master MainProcess[16948]: INFO >>> Closing IP Master app...
+2023-04-19T12:10:14.333Z ip-master MainProcess[41204]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:10:14.333Z ip-master MainProcess[41204]: INFO >>> Extra logging configuration completed
+2023-04-19T12:10:14.333Z ip-master MainProcess[41204]: INFO >>> Loading IP Master app...
+2023-04-19T12:10:14.334Z ip-master.app MainProcess[41204]: DEBUG >>> Inside function app.server
+2023-04-19T12:10:14.335Z ip-master.app MainProcess[41204]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:10:14.337Z ip-master.app MainProcess[41204]: DEBUG >>> Setting App configuration items
+2023-04-19T12:10:14.339Z ip-master.app MainProcess[41204]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:10:14.339Z ip-master.app MainProcess[41204]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:10:14.397Z ip-master.app MainProcess[41204]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:10:14.401Z ip-master.app MainProcess[41204]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:10:14.407Z ip-master.app MainProcess[41204]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:10:14.410Z ip-master.app MainProcess[41204]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:10:14.411Z ip-master.app MainProcess[41204]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:10:14.412Z ip-master.app MainProcess[41204]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:10:15.482Z ip-master MainProcess[29544]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:10:15.482Z ip-master MainProcess[29544]: INFO >>> Extra logging configuration completed
+2023-04-19T12:10:15.483Z ip-master MainProcess[29544]: INFO >>> Loading IP Master app...
+2023-04-19T12:10:15.484Z ip-master.app MainProcess[29544]: DEBUG >>> Inside function app.server
+2023-04-19T12:10:15.485Z ip-master.app MainProcess[29544]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:10:15.486Z ip-master.app MainProcess[29544]: DEBUG >>> Setting App configuration items
+2023-04-19T12:10:15.487Z ip-master.app MainProcess[29544]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:10:15.487Z ip-master.app MainProcess[29544]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:10:15.570Z ip-master.app MainProcess[29544]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:10:15.576Z ip-master.app MainProcess[29544]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:10:15.578Z ip-master.app MainProcess[29544]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:10:15.580Z ip-master.app MainProcess[29544]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:10:15.581Z ip-master.app MainProcess[29544]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:10:15.581Z ip-master.app MainProcess[29544]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:12:07.175Z ip-master MainProcess[29544]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 64, in server
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T12:12:07.180Z ip-master MainProcess[29544]: INFO >>> Closing IP Master app...
+2023-04-19T12:12:07.236Z ip-master MainProcess[41204]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 64, in server
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T12:12:07.243Z ip-master MainProcess[41204]: INFO >>> Closing IP Master app...
+2023-04-19T12:12:11.163Z ip-master MainProcess[41908]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:12:11.163Z ip-master MainProcess[41908]: INFO >>> Extra logging configuration completed
+2023-04-19T12:12:11.163Z ip-master MainProcess[41908]: INFO >>> Loading IP Master app...
+2023-04-19T12:12:11.165Z ip-master.app MainProcess[41908]: DEBUG >>> Inside function app.server
+2023-04-19T12:12:11.166Z ip-master.app MainProcess[41908]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:12:11.168Z ip-master.app MainProcess[41908]: DEBUG >>> Setting App configuration items
+2023-04-19T12:12:11.169Z ip-master.app MainProcess[41908]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:12:11.170Z ip-master.app MainProcess[41908]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:12:11.226Z ip-master.app MainProcess[41908]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:12:11.229Z ip-master.app MainProcess[41908]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:12:11.231Z ip-master.app MainProcess[41908]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:12:11.234Z ip-master.app MainProcess[41908]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:12:11.236Z ip-master.app MainProcess[41908]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:12:11.236Z ip-master.app MainProcess[41908]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:12:12.237Z ip-master MainProcess[15728]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:12:12.237Z ip-master MainProcess[15728]: INFO >>> Extra logging configuration completed
+2023-04-19T12:12:12.238Z ip-master MainProcess[15728]: INFO >>> Loading IP Master app...
+2023-04-19T12:12:12.239Z ip-master.app MainProcess[15728]: DEBUG >>> Inside function app.server
+2023-04-19T12:12:12.239Z ip-master.app MainProcess[15728]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:12:12.241Z ip-master.app MainProcess[15728]: DEBUG >>> Setting App configuration items
+2023-04-19T12:12:12.242Z ip-master.app MainProcess[15728]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:12:12.242Z ip-master.app MainProcess[15728]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:12:12.313Z ip-master.app MainProcess[15728]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:12:12.316Z ip-master.app MainProcess[15728]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:12:12.317Z ip-master.app MainProcess[15728]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:12:12.318Z ip-master.app MainProcess[15728]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:12:12.319Z ip-master.app MainProcess[15728]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:12:12.319Z ip-master.app MainProcess[15728]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:15:40.939Z ip-master MainProcess[15728]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 63, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T12:15:40.943Z ip-master MainProcess[15728]: INFO >>> Closing IP Master app...
+2023-04-19T12:15:41.5Z ip-master MainProcess[41908]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 63, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T12:15:41.10Z ip-master MainProcess[41908]: INFO >>> Closing IP Master app...
+2023-04-19T12:15:44.688Z ip-master MainProcess[27388]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:15:44.689Z ip-master MainProcess[27388]: INFO >>> Extra logging configuration completed
+2023-04-19T12:15:44.689Z ip-master MainProcess[27388]: INFO >>> Loading IP Master app...
+2023-04-19T12:15:44.690Z ip-master.app MainProcess[27388]: DEBUG >>> Inside function app.server
+2023-04-19T12:15:44.691Z ip-master.app MainProcess[27388]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:15:44.693Z ip-master.app MainProcess[27388]: DEBUG >>> Setting App configuration items
+2023-04-19T12:15:44.693Z ip-master.app MainProcess[27388]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:15:44.694Z ip-master.app MainProcess[27388]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:15:44.762Z ip-master MainProcess[27388]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 56, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 47, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 25, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 19, in <module>
+    from app.authentication.util import verify_pass
+ImportError: cannot import name 'verify_pass' from 'app.authentication.util' (C:\Code\IP Master\Web Frontend\app\authentication\util.py)
+2023-04-19T12:15:44.766Z ip-master MainProcess[27388]: INFO >>> Closing IP Master app...
+2023-04-19T12:27:59.287Z ip-master MainProcess[17524]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:27:59.287Z ip-master MainProcess[17524]: INFO >>> Extra logging configuration completed
+2023-04-19T12:27:59.288Z ip-master MainProcess[17524]: INFO >>> Loading IP Master app...
+2023-04-19T12:27:59.290Z ip-master.app MainProcess[17524]: DEBUG >>> Inside function app.server
+2023-04-19T12:27:59.291Z ip-master.app MainProcess[17524]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:27:59.292Z ip-master.app MainProcess[17524]: DEBUG >>> Setting App configuration items
+2023-04-19T12:27:59.293Z ip-master.app MainProcess[17524]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:27:59.296Z ip-master.app MainProcess[17524]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:27:59.402Z ip-master MainProcess[17524]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 56, in server
+    flask_app = create_app(__name__,config)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 47, in create_app
+    register_blueprints(app)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 25, in register_blueprints
+    module = import_module(f'app.{module_name}.routes')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jphelps\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1206, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1178, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1149, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Code\IP Master\Web Frontend\app\authentication\routes.py", line 19, in <module>
+    from app.authentication.util import verify_pass
+  File "C:\Code\IP Master\Web Frontend\app\authentication\util.py", line 9
+    def verify_pass(pro)
+                        ^
+SyntaxError: expected ':'
+2023-04-19T12:27:59.412Z ip-master MainProcess[17524]: INFO >>> Closing IP Master app...
+2023-04-19T12:29:16.362Z ip-master MainProcess[41504]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:29:16.363Z ip-master MainProcess[41504]: INFO >>> Extra logging configuration completed
+2023-04-19T12:29:16.364Z ip-master MainProcess[41504]: INFO >>> Loading IP Master app...
+2023-04-19T12:29:16.365Z ip-master.app MainProcess[41504]: DEBUG >>> Inside function app.server
+2023-04-19T12:29:16.366Z ip-master.app MainProcess[41504]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:29:16.368Z ip-master.app MainProcess[41504]: DEBUG >>> Setting App configuration items
+2023-04-19T12:29:16.370Z ip-master.app MainProcess[41504]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:29:16.371Z ip-master.app MainProcess[41504]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:29:16.452Z ip-master.app MainProcess[41504]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:29:16.455Z ip-master.app MainProcess[41504]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:29:16.458Z ip-master.app MainProcess[41504]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:29:16.460Z ip-master.app MainProcess[41504]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:29:16.461Z ip-master.app MainProcess[41504]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:29:16.461Z ip-master.app MainProcess[41504]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:29:17.798Z ip-master MainProcess[18444]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:29:17.800Z ip-master MainProcess[18444]: INFO >>> Extra logging configuration completed
+2023-04-19T12:29:17.802Z ip-master MainProcess[18444]: INFO >>> Loading IP Master app...
+2023-04-19T12:29:17.805Z ip-master.app MainProcess[18444]: DEBUG >>> Inside function app.server
+2023-04-19T12:29:17.806Z ip-master.app MainProcess[18444]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:29:17.809Z ip-master.app MainProcess[18444]: DEBUG >>> Setting App configuration items
+2023-04-19T12:29:17.810Z ip-master.app MainProcess[18444]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:29:17.810Z ip-master.app MainProcess[18444]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:29:17.902Z ip-master.app MainProcess[18444]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:29:17.905Z ip-master.app MainProcess[18444]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:29:17.908Z ip-master.app MainProcess[18444]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:29:17.911Z ip-master.app MainProcess[18444]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:29:17.912Z ip-master.app MainProcess[18444]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:29:17.913Z ip-master.app MainProcess[18444]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:30:34.195Z ip-master.app MainProcess[18444]: DEBUG >>> Leaving app.server
+2023-04-19T12:30:34.195Z ip-master MainProcess[18444]: INFO >>> Closing IP Master app...
+2023-04-19T12:30:34.270Z ip-master.app MainProcess[41504]: DEBUG >>> Leaving app.server
+2023-04-19T12:30:34.272Z ip-master MainProcess[41504]: INFO >>> Closing IP Master app...
+2023-04-19T12:30:38.755Z ip-master MainProcess[40588]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:30:38.756Z ip-master MainProcess[40588]: INFO >>> Extra logging configuration completed
+2023-04-19T12:30:38.757Z ip-master MainProcess[40588]: INFO >>> Loading IP Master app...
+2023-04-19T12:30:38.759Z ip-master.app MainProcess[40588]: DEBUG >>> Inside function app.server
+2023-04-19T12:30:38.760Z ip-master.app MainProcess[40588]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:30:38.762Z ip-master.app MainProcess[40588]: DEBUG >>> Setting App configuration items
+2023-04-19T12:30:38.763Z ip-master.app MainProcess[40588]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:30:38.763Z ip-master.app MainProcess[40588]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:30:38.827Z ip-master.app MainProcess[40588]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:30:38.830Z ip-master.app MainProcess[40588]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:30:38.832Z ip-master.app MainProcess[40588]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:30:38.836Z ip-master.app MainProcess[40588]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:30:38.838Z ip-master.app MainProcess[40588]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:30:38.839Z ip-master.app MainProcess[40588]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:30:39.879Z ip-master MainProcess[41212]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:30:39.880Z ip-master MainProcess[41212]: INFO >>> Extra logging configuration completed
+2023-04-19T12:30:39.881Z ip-master MainProcess[41212]: INFO >>> Loading IP Master app...
+2023-04-19T12:30:39.882Z ip-master.app MainProcess[41212]: DEBUG >>> Inside function app.server
+2023-04-19T12:30:39.883Z ip-master.app MainProcess[41212]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:30:39.885Z ip-master.app MainProcess[41212]: DEBUG >>> Setting App configuration items
+2023-04-19T12:30:39.886Z ip-master.app MainProcess[41212]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:30:39.887Z ip-master.app MainProcess[41212]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:30:39.971Z ip-master.app MainProcess[41212]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:30:39.974Z ip-master.app MainProcess[41212]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:30:39.976Z ip-master.app MainProcess[41212]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:30:39.978Z ip-master.app MainProcess[41212]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:30:39.979Z ip-master.app MainProcess[41212]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:30:39.980Z ip-master.app MainProcess[41212]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:35:43.57Z ip-master MainProcess[41212]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 63, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T12:35:43.63Z ip-master MainProcess[41212]: INFO >>> Closing IP Master app...
+2023-04-19T12:35:43.120Z ip-master MainProcess[40588]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 63, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T12:35:43.125Z ip-master MainProcess[40588]: INFO >>> Closing IP Master app...
+2023-04-19T12:37:51.124Z ip-master MainProcess[4248]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:37:51.125Z ip-master MainProcess[4248]: INFO >>> Extra logging configuration completed
+2023-04-19T12:37:51.127Z ip-master MainProcess[4248]: INFO >>> Loading IP Master app...
+2023-04-19T12:37:51.128Z ip-master.app MainProcess[4248]: DEBUG >>> Inside function app.server
+2023-04-19T12:37:51.129Z ip-master.app MainProcess[4248]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:37:51.131Z ip-master.app MainProcess[4248]: DEBUG >>> Setting App configuration items
+2023-04-19T12:37:51.132Z ip-master.app MainProcess[4248]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:37:51.134Z ip-master.app MainProcess[4248]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:37:51.203Z ip-master.app MainProcess[4248]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:37:51.204Z ip-master.app MainProcess[4248]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:37:51.207Z ip-master.app MainProcess[4248]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:37:51.210Z ip-master.app MainProcess[4248]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:37:51.212Z ip-master.app MainProcess[4248]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:37:51.213Z ip-master.app MainProcess[4248]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:37:52.297Z ip-master MainProcess[31084]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:37:52.298Z ip-master MainProcess[31084]: INFO >>> Extra logging configuration completed
+2023-04-19T12:37:52.298Z ip-master MainProcess[31084]: INFO >>> Loading IP Master app...
+2023-04-19T12:37:52.301Z ip-master.app MainProcess[31084]: DEBUG >>> Inside function app.server
+2023-04-19T12:37:52.302Z ip-master.app MainProcess[31084]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:37:52.304Z ip-master.app MainProcess[31084]: DEBUG >>> Setting App configuration items
+2023-04-19T12:37:52.304Z ip-master.app MainProcess[31084]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:37:52.304Z ip-master.app MainProcess[31084]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:37:52.370Z ip-master.app MainProcess[31084]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:37:52.372Z ip-master.app MainProcess[31084]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:37:52.376Z ip-master.app MainProcess[31084]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:37:52.378Z ip-master.app MainProcess[31084]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:37:52.379Z ip-master.app MainProcess[31084]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:37:52.380Z ip-master.app MainProcess[31084]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:38:48.16Z ip-master MainProcess[31084]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T12:38:48.22Z ip-master MainProcess[31084]: INFO >>> Closing IP Master app...
+2023-04-19T12:38:48.78Z ip-master MainProcess[4248]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T12:38:48.84Z ip-master MainProcess[4248]: INFO >>> Closing IP Master app...
+2023-04-19T12:38:50.606Z ip-master MainProcess[20140]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:38:50.607Z ip-master MainProcess[20140]: INFO >>> Extra logging configuration completed
+2023-04-19T12:38:50.607Z ip-master MainProcess[20140]: INFO >>> Loading IP Master app...
+2023-04-19T12:38:50.608Z ip-master.app MainProcess[20140]: DEBUG >>> Inside function app.server
+2023-04-19T12:38:50.610Z ip-master.app MainProcess[20140]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:38:50.612Z ip-master.app MainProcess[20140]: DEBUG >>> Setting App configuration items
+2023-04-19T12:38:50.613Z ip-master.app MainProcess[20140]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:38:50.613Z ip-master.app MainProcess[20140]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:38:50.697Z ip-master.app MainProcess[20140]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:38:50.698Z ip-master.app MainProcess[20140]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:38:50.702Z ip-master.app MainProcess[20140]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:38:50.706Z ip-master.app MainProcess[20140]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:38:50.707Z ip-master.app MainProcess[20140]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:38:50.707Z ip-master.app MainProcess[20140]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:38:52.339Z ip-master MainProcess[29608]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:38:52.341Z ip-master MainProcess[29608]: INFO >>> Extra logging configuration completed
+2023-04-19T12:38:52.342Z ip-master MainProcess[29608]: INFO >>> Loading IP Master app...
+2023-04-19T12:38:52.343Z ip-master.app MainProcess[29608]: DEBUG >>> Inside function app.server
+2023-04-19T12:38:52.344Z ip-master.app MainProcess[29608]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:38:52.346Z ip-master.app MainProcess[29608]: DEBUG >>> Setting App configuration items
+2023-04-19T12:38:52.347Z ip-master.app MainProcess[29608]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:38:52.348Z ip-master.app MainProcess[29608]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:38:52.437Z ip-master.app MainProcess[29608]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:38:52.440Z ip-master.app MainProcess[29608]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:38:52.445Z ip-master.app MainProcess[29608]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:38:52.447Z ip-master.app MainProcess[29608]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:38:52.449Z ip-master.app MainProcess[29608]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:38:52.451Z ip-master.app MainProcess[29608]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:39:48.781Z ip-master MainProcess[29608]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T12:39:48.787Z ip-master MainProcess[29608]: INFO >>> Closing IP Master app...
+2023-04-19T12:39:48.847Z ip-master MainProcess[20140]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T12:39:48.852Z ip-master MainProcess[20140]: INFO >>> Closing IP Master app...
+2023-04-19T12:39:51.897Z ip-master MainProcess[8108]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:39:51.899Z ip-master MainProcess[8108]: INFO >>> Extra logging configuration completed
+2023-04-19T12:39:51.899Z ip-master MainProcess[8108]: INFO >>> Loading IP Master app...
+2023-04-19T12:39:51.901Z ip-master.app MainProcess[8108]: DEBUG >>> Inside function app.server
+2023-04-19T12:39:51.904Z ip-master.app MainProcess[8108]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:39:51.910Z ip-master.app MainProcess[8108]: DEBUG >>> Setting App configuration items
+2023-04-19T12:39:51.912Z ip-master.app MainProcess[8108]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:39:51.913Z ip-master.app MainProcess[8108]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:39:52.15Z ip-master.app MainProcess[8108]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:39:52.20Z ip-master.app MainProcess[8108]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:39:52.25Z ip-master.app MainProcess[8108]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:39:52.28Z ip-master.app MainProcess[8108]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:39:52.28Z ip-master.app MainProcess[8108]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:39:52.30Z ip-master.app MainProcess[8108]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T12:39:53.525Z ip-master MainProcess[40380]: DEBUG >>> Remote syslog is disabled
+2023-04-19T12:39:53.526Z ip-master MainProcess[40380]: INFO >>> Extra logging configuration completed
+2023-04-19T12:39:53.528Z ip-master MainProcess[40380]: INFO >>> Loading IP Master app...
+2023-04-19T12:39:53.530Z ip-master.app MainProcess[40380]: DEBUG >>> Inside function app.server
+2023-04-19T12:39:53.532Z ip-master.app MainProcess[40380]: DEBUG >>> Inside function app.create_app
+2023-04-19T12:39:53.535Z ip-master.app MainProcess[40380]: DEBUG >>> Setting App configuration items
+2023-04-19T12:39:53.536Z ip-master.app MainProcess[40380]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T12:39:53.537Z ip-master.app MainProcess[40380]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T12:39:53.624Z ip-master.app MainProcess[40380]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T12:39:53.627Z ip-master.app MainProcess[40380]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T12:39:53.630Z ip-master.app MainProcess[40380]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T12:39:53.633Z ip-master.app MainProcess[40380]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T12:39:53.636Z ip-master.app MainProcess[40380]: DEBUG >>> Leaving app.create_app
+2023-04-19T12:39:53.638Z ip-master.app MainProcess[40380]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:14:34.427Z ip-master MainProcess[40380]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T13:14:34.436Z ip-master MainProcess[40380]: INFO >>> Closing IP Master app...
+2023-04-19T13:14:34.519Z ip-master MainProcess[8108]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T13:14:34.529Z ip-master MainProcess[8108]: INFO >>> Closing IP Master app...
+2023-04-19T13:16:27.44Z ip-master MainProcess[12564]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:16:27.44Z ip-master MainProcess[12564]: INFO >>> Extra logging configuration completed
+2023-04-19T13:16:27.45Z ip-master MainProcess[12564]: INFO >>> Loading IP Master app...
+2023-04-19T13:16:27.46Z ip-master.app MainProcess[12564]: DEBUG >>> Inside function app.server
+2023-04-19T13:16:27.47Z ip-master.app MainProcess[12564]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:16:27.49Z ip-master.app MainProcess[12564]: DEBUG >>> Setting App configuration items
+2023-04-19T13:16:27.51Z ip-master.app MainProcess[12564]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:16:27.54Z ip-master.app MainProcess[12564]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:16:27.141Z ip-master.app MainProcess[12564]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:16:27.143Z ip-master.app MainProcess[12564]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:16:27.151Z ip-master.app MainProcess[12564]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:16:27.154Z ip-master.app MainProcess[12564]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:16:27.155Z ip-master.app MainProcess[12564]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:16:27.156Z ip-master.app MainProcess[12564]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:16:28.225Z ip-master MainProcess[17448]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:16:28.225Z ip-master MainProcess[17448]: INFO >>> Extra logging configuration completed
+2023-04-19T13:16:28.225Z ip-master MainProcess[17448]: INFO >>> Loading IP Master app...
+2023-04-19T13:16:28.227Z ip-master.app MainProcess[17448]: DEBUG >>> Inside function app.server
+2023-04-19T13:16:28.228Z ip-master.app MainProcess[17448]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:16:28.229Z ip-master.app MainProcess[17448]: DEBUG >>> Setting App configuration items
+2023-04-19T13:16:28.230Z ip-master.app MainProcess[17448]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:16:28.231Z ip-master.app MainProcess[17448]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:16:28.292Z ip-master.app MainProcess[17448]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:16:28.298Z ip-master.app MainProcess[17448]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:16:28.301Z ip-master.app MainProcess[17448]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:16:28.304Z ip-master.app MainProcess[17448]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:16:28.305Z ip-master.app MainProcess[17448]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:16:28.305Z ip-master.app MainProcess[17448]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:18:16.38Z ip-master MainProcess[17448]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T13:18:16.43Z ip-master MainProcess[17448]: INFO >>> Closing IP Master app...
+2023-04-19T13:18:16.107Z ip-master MainProcess[12564]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T13:18:16.114Z ip-master MainProcess[12564]: INFO >>> Closing IP Master app...
+2023-04-19T13:18:19.60Z ip-master MainProcess[34044]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:18:19.61Z ip-master MainProcess[34044]: INFO >>> Extra logging configuration completed
+2023-04-19T13:18:19.62Z ip-master MainProcess[34044]: INFO >>> Loading IP Master app...
+2023-04-19T13:18:19.65Z ip-master.app MainProcess[34044]: DEBUG >>> Inside function app.server
+2023-04-19T13:18:19.66Z ip-master.app MainProcess[34044]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:18:19.71Z ip-master.app MainProcess[34044]: DEBUG >>> Setting App configuration items
+2023-04-19T13:18:19.75Z ip-master.app MainProcess[34044]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:18:19.75Z ip-master.app MainProcess[34044]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:18:19.281Z ip-master.app MainProcess[34044]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:18:19.289Z ip-master.app MainProcess[34044]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:18:19.299Z ip-master.app MainProcess[34044]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:18:19.307Z ip-master.app MainProcess[34044]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:18:19.308Z ip-master.app MainProcess[34044]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:18:19.308Z ip-master.app MainProcess[34044]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:18:20.725Z ip-master MainProcess[21524]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:18:20.725Z ip-master MainProcess[21524]: INFO >>> Extra logging configuration completed
+2023-04-19T13:18:20.726Z ip-master MainProcess[21524]: INFO >>> Loading IP Master app...
+2023-04-19T13:18:20.728Z ip-master.app MainProcess[21524]: DEBUG >>> Inside function app.server
+2023-04-19T13:18:20.730Z ip-master.app MainProcess[21524]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:18:20.732Z ip-master.app MainProcess[21524]: DEBUG >>> Setting App configuration items
+2023-04-19T13:18:20.733Z ip-master.app MainProcess[21524]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:18:20.734Z ip-master.app MainProcess[21524]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:18:20.796Z ip-master.app MainProcess[21524]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:18:20.799Z ip-master.app MainProcess[21524]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:18:20.801Z ip-master.app MainProcess[21524]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:18:20.803Z ip-master.app MainProcess[21524]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:18:20.804Z ip-master.app MainProcess[21524]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:18:20.804Z ip-master.app MainProcess[21524]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:18:57.761Z ip-master MainProcess[21524]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T13:18:57.768Z ip-master MainProcess[21524]: INFO >>> Closing IP Master app...
+2023-04-19T13:18:57.827Z ip-master MainProcess[34044]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T13:18:57.832Z ip-master MainProcess[34044]: INFO >>> Closing IP Master app...
+2023-04-19T13:19:00.669Z ip-master MainProcess[35120]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:19:00.673Z ip-master MainProcess[35120]: INFO >>> Extra logging configuration completed
+2023-04-19T13:19:00.674Z ip-master MainProcess[35120]: INFO >>> Loading IP Master app...
+2023-04-19T13:19:00.675Z ip-master.app MainProcess[35120]: DEBUG >>> Inside function app.server
+2023-04-19T13:19:00.675Z ip-master.app MainProcess[35120]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:19:00.678Z ip-master.app MainProcess[35120]: DEBUG >>> Setting App configuration items
+2023-04-19T13:19:00.679Z ip-master.app MainProcess[35120]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:19:00.680Z ip-master.app MainProcess[35120]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:19:00.778Z ip-master.app MainProcess[35120]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:19:00.783Z ip-master.app MainProcess[35120]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:19:00.792Z ip-master.app MainProcess[35120]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:19:00.796Z ip-master.app MainProcess[35120]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:19:00.797Z ip-master.app MainProcess[35120]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:19:00.798Z ip-master.app MainProcess[35120]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:19:02.221Z ip-master MainProcess[41600]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:19:02.222Z ip-master MainProcess[41600]: INFO >>> Extra logging configuration completed
+2023-04-19T13:19:02.224Z ip-master MainProcess[41600]: INFO >>> Loading IP Master app...
+2023-04-19T13:19:02.226Z ip-master.app MainProcess[41600]: DEBUG >>> Inside function app.server
+2023-04-19T13:19:02.227Z ip-master.app MainProcess[41600]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:19:02.230Z ip-master.app MainProcess[41600]: DEBUG >>> Setting App configuration items
+2023-04-19T13:19:02.232Z ip-master.app MainProcess[41600]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:19:02.233Z ip-master.app MainProcess[41600]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:19:02.335Z ip-master.app MainProcess[41600]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:19:02.339Z ip-master.app MainProcess[41600]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:19:02.342Z ip-master.app MainProcess[41600]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:19:02.348Z ip-master.app MainProcess[41600]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:19:02.349Z ip-master.app MainProcess[41600]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:19:02.350Z ip-master.app MainProcess[41600]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:20:18.373Z ip-master MainProcess[41600]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T13:20:18.382Z ip-master MainProcess[41600]: INFO >>> Closing IP Master app...
+2023-04-19T13:20:18.490Z ip-master MainProcess[35120]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T13:20:18.497Z ip-master MainProcess[35120]: INFO >>> Closing IP Master app...
+2023-04-19T13:20:23.859Z ip-master MainProcess[40792]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:20:23.859Z ip-master MainProcess[40792]: INFO >>> Extra logging configuration completed
+2023-04-19T13:20:23.860Z ip-master MainProcess[40792]: INFO >>> Loading IP Master app...
+2023-04-19T13:20:23.862Z ip-master.app MainProcess[40792]: DEBUG >>> Inside function app.server
+2023-04-19T13:20:23.863Z ip-master.app MainProcess[40792]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:20:23.865Z ip-master.app MainProcess[40792]: DEBUG >>> Setting App configuration items
+2023-04-19T13:20:23.866Z ip-master.app MainProcess[40792]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:20:23.867Z ip-master.app MainProcess[40792]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:20:23.960Z ip-master.app MainProcess[40792]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:20:23.964Z ip-master.app MainProcess[40792]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:20:23.967Z ip-master.app MainProcess[40792]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:20:23.971Z ip-master.app MainProcess[40792]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:20:23.972Z ip-master.app MainProcess[40792]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:20:23.973Z ip-master.app MainProcess[40792]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:20:25.201Z ip-master MainProcess[40832]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:20:25.202Z ip-master MainProcess[40832]: INFO >>> Extra logging configuration completed
+2023-04-19T13:20:25.203Z ip-master MainProcess[40832]: INFO >>> Loading IP Master app...
+2023-04-19T13:20:25.205Z ip-master.app MainProcess[40832]: DEBUG >>> Inside function app.server
+2023-04-19T13:20:25.208Z ip-master.app MainProcess[40832]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:20:25.210Z ip-master.app MainProcess[40832]: DEBUG >>> Setting App configuration items
+2023-04-19T13:20:25.211Z ip-master.app MainProcess[40832]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:20:25.212Z ip-master.app MainProcess[40832]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:20:25.330Z ip-master.app MainProcess[40832]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:20:25.333Z ip-master.app MainProcess[40832]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:20:25.337Z ip-master.app MainProcess[40832]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:20:25.343Z ip-master.app MainProcess[40832]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:20:25.344Z ip-master.app MainProcess[40832]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:20:25.345Z ip-master.app MainProcess[40832]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:20:49.276Z ip-master MainProcess[40832]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master\Web Frontend\IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 442, in run_with_reloader
+    reloader.run()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 248, in run
+    self.run_step()
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 301, in run_step
+    self.trigger_reload(name)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 273, in trigger_reload
+    sys.exit(3)
+SystemExit: 3
+2023-04-19T13:20:49.283Z ip-master MainProcess[40832]: INFO >>> Closing IP Master app...
+2023-04-19T13:20:49.348Z ip-master MainProcess[40792]: ERROR >>> Something is broken...
+Traceback (most recent call last):
+  File "C:\Code\IP Master/Web Frontend/IP-Master.py", line 102, in main
+    app.server(config)
+  File "C:\Code\IP Master\Web Frontend\app\__init__.py", line 65, in server
+    flask_app.run(host=address,debug=bool(debug),port=int(port))
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\flask\app.py", line 1191, in run
+    run_simple(t.cast(str, host), port, self, **options)
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\serving.py", line 1059, in run_simple
+    run_with_reloader(
+  File "c:\Code\IP Master\Web Frontend\.venv-Web_Frontend\Lib\site-packages\werkzeug\_reloader.py", line 444, in run_with_reloader
+    sys.exit(reloader.restart_with_reloader())
+SystemExit: 0
+2023-04-19T13:20:49.353Z ip-master MainProcess[40792]: INFO >>> Closing IP Master app...
+2023-04-19T13:20:53.139Z ip-master MainProcess[25300]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:20:53.140Z ip-master MainProcess[25300]: INFO >>> Extra logging configuration completed
+2023-04-19T13:20:53.142Z ip-master MainProcess[25300]: INFO >>> Loading IP Master app...
+2023-04-19T13:20:53.144Z ip-master.app MainProcess[25300]: DEBUG >>> Inside function app.server
+2023-04-19T13:20:53.146Z ip-master.app MainProcess[25300]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:20:53.152Z ip-master.app MainProcess[25300]: DEBUG >>> Setting App configuration items
+2023-04-19T13:20:53.153Z ip-master.app MainProcess[25300]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:20:53.154Z ip-master.app MainProcess[25300]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:20:53.244Z ip-master.app MainProcess[25300]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:20:53.247Z ip-master.app MainProcess[25300]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:20:53.251Z ip-master.app MainProcess[25300]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:20:53.255Z ip-master.app MainProcess[25300]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:20:53.256Z ip-master.app MainProcess[25300]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:20:53.256Z ip-master.app MainProcess[25300]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T13:20:54.651Z ip-master MainProcess[39480]: DEBUG >>> Remote syslog is disabled
+2023-04-19T13:20:54.651Z ip-master MainProcess[39480]: INFO >>> Extra logging configuration completed
+2023-04-19T13:20:54.653Z ip-master MainProcess[39480]: INFO >>> Loading IP Master app...
+2023-04-19T13:20:54.654Z ip-master.app MainProcess[39480]: DEBUG >>> Inside function app.server
+2023-04-19T13:20:54.655Z ip-master.app MainProcess[39480]: DEBUG >>> Inside function app.create_app
+2023-04-19T13:20:54.659Z ip-master.app MainProcess[39480]: DEBUG >>> Setting App configuration items
+2023-04-19T13:20:54.660Z ip-master.app MainProcess[39480]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T13:20:54.662Z ip-master.app MainProcess[39480]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T13:20:54.778Z ip-master.app MainProcess[39480]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T13:20:54.782Z ip-master.app MainProcess[39480]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T13:20:54.787Z ip-master.app MainProcess[39480]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T13:20:54.792Z ip-master.app MainProcess[39480]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T13:20:54.794Z ip-master.app MainProcess[39480]: DEBUG >>> Leaving app.create_app
+2023-04-19T13:20:54.795Z ip-master.app MainProcess[39480]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T15:15:20.923Z ip-master MainProcess[42200]: DEBUG >>> Remote syslog is disabled
+2023-04-19T15:15:20.923Z ip-master MainProcess[42200]: INFO >>> Extra logging configuration completed
+2023-04-19T15:15:20.924Z ip-master MainProcess[42200]: INFO >>> Loading IP Master app...
+2023-04-19T15:15:20.926Z ip-master.app MainProcess[42200]: DEBUG >>> Inside function app.server
+2023-04-19T15:15:20.927Z ip-master.app MainProcess[42200]: DEBUG >>> Inside function app.create_app
+2023-04-19T15:15:20.930Z ip-master.app MainProcess[42200]: DEBUG >>> Setting App configuration items
+2023-04-19T15:15:20.931Z ip-master.app MainProcess[42200]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T15:15:20.931Z ip-master.app MainProcess[42200]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T15:15:21.20Z ip-master.app MainProcess[42200]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T15:15:21.23Z ip-master.app MainProcess[42200]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T15:15:21.26Z ip-master.app MainProcess[42200]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T15:15:21.29Z ip-master.app MainProcess[42200]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T15:15:21.30Z ip-master.app MainProcess[42200]: DEBUG >>> Leaving app.create_app
+2023-04-19T15:15:21.31Z ip-master.app MainProcess[42200]: INFO >>> Starting test Web Server on 0.0.0.0:88
+2023-04-19T15:15:22.146Z ip-master MainProcess[42740]: DEBUG >>> Remote syslog is disabled
+2023-04-19T15:15:22.147Z ip-master MainProcess[42740]: INFO >>> Extra logging configuration completed
+2023-04-19T15:15:22.148Z ip-master MainProcess[42740]: INFO >>> Loading IP Master app...
+2023-04-19T15:15:22.151Z ip-master.app MainProcess[42740]: DEBUG >>> Inside function app.server
+2023-04-19T15:15:22.151Z ip-master.app MainProcess[42740]: DEBUG >>> Inside function app.create_app
+2023-04-19T15:15:22.154Z ip-master.app MainProcess[42740]: DEBUG >>> Setting App configuration items
+2023-04-19T15:15:22.154Z ip-master.app MainProcess[42740]: DEBUG >>> Inside function app.register_blueprints
+2023-04-19T15:15:22.155Z ip-master.app MainProcess[42740]: DEBUG >>> Importing Module app.authentication.routes
+2023-04-19T15:15:22.220Z ip-master.app MainProcess[42740]: DEBUG >>> Registering Blueprint <Blueprint 'authentication_blueprint'>
+2023-04-19T15:15:22.222Z ip-master.app MainProcess[42740]: DEBUG >>> Importing Module app.home.routes
+2023-04-19T15:15:22.227Z ip-master.app MainProcess[42740]: DEBUG >>> Registering Blueprint <Blueprint 'home_blueprint'>
+2023-04-19T15:15:22.229Z ip-master.app MainProcess[42740]: DEBUG >>> Leaving app.register_blueprints
+2023-04-19T15:15:22.231Z ip-master.app MainProcess[42740]: DEBUG >>> Leaving app.create_app
+2023-04-19T15:15:22.232Z ip-master.app MainProcess[42740]: INFO >>> Starting test Web Server on 0.0.0.0:88

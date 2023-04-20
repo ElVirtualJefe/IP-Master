@@ -1,7 +1,7 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3.11-slim
 
-WORKDIR /usr/src/PyIPAM
+WORKDIR /usr/src/ipmaster
 #EXPOSE 5000
 
 # Keeps Python from generating .pyc files in the container
@@ -17,10 +17,10 @@ ENV PYTHONUNBUFFERED=1
 RUN pip install --upgrade pip
 
 # Install pip requirements
-COPY ./requirements.txt /usr/src/PyIPAM/requirements.txt
+COPY ./requirements.txt /usr/src/ipmaster/requirements.txt
 RUN pip install -r requirements.txt
 
-COPY . /usr/src/PyIPAM/
+COPY . /usr/src/ipmaster/
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
