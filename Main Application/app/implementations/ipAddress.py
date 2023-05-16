@@ -1,26 +1,98 @@
+from inspect import currentframe
+from app.implementations import whoami
 import logging
 logger = logging.getLogger(f'ip-master.{__name__}')
 
 import psycopg2.errors as err
 from app.models.ipAddress import ipAddressModel
-from inspect import currentframe
-from app.implementations import whoami
+from app.protos import ipAddress_pb2 as ip_pb2
+from sqlalchemy import exc as sa_exc
+from grpc import StatusCode
+from app.implementations.helpers import convertRowToMessage
 
-def _getIpAddressById(session,id=None):
+from app import _create_database_connection
+
+
+def getIpAddress(request,context,session=None):
     logger.debug(f'Inside function {__name__}.{whoami(currentframe())}')
-    if id == None or id == '':
-        raise err.InvalidParameterValue('Value missing for id')
-    else:
-        ip = session.query(ipAddressModel).filter_by(id=id).first()
-        if ip == None:
-            raise err.NoDataFound(f'Could not find IP Address with id: {id}')
-        else:
-            logger.debug(f'{ip}')
-            logger.debug(f'{repr(ip)}')
-            logger.info(f'Found IP:{ip.ipAddress} with id={id}')
 
+    #from app import SESSION as session
+    from app.config import config
+    if session == None:
+        session = _create_database_connection(config['postgres'])
+ 
+    logger.debug(f'session = {session}')
+    logger.debug(f'Request Type = {type(request)}')
+
+    try:
+        if type(request) == ip_pb2.IpAddressIdRequest:
+            if request.id == None or request.id == '':
+                raise err.InvalidParameterValue('Value missing for id')
+            else:
+
+                ip = session.query(ipAddressModel).filter_by(id=request.id).first()
+                if ip == None:
+                    raise err.NoDataFound(f'Could not find IP Address with id: {request.id}')
+                else:
+                    logger.debug(f'{ip}')
+                    logger.debug(f'{repr(ip)}')
+                    logger.info(f'Found IP:{ip.ipAddress} with id={ip.id}')
+
+        elif type(request) == ip_pb2.IpAddressNameRequest:
+            if request.name == None or request.name == '':
+                raise err.InvalidParameterValue('Value missing for name')
+            else:
+
+                ip = session.query(ipAddressModel).filter_by(name=request.name).all()
+                if ip == None:
+                    raise err.NoDataFound(f'Could not find IP Address with name: {request.name}')
+                else:
+                    logger.debug(f'{ip}')
+                    logger.debug(f'{repr(ip)}')
+                    logger.info(f'Found IP:{ip.ipAddress} with id={ip.id}')
+
+        elif type(request) == ip_pb2.IpAddressSubnetRequest:
+            if request.id == None or request.id == '':
+                raise err.InvalidParameterValue('Value missing for subnet_id')
+            else:
+
+                ip = session.query(ipAddressModel).filter_by(subnet_id=request.id).all()
+                if ip == None:
+                    raise err.NoDataFound(f'Could not find IP Address with name: {request.name}')
+                else:
+                    logger.debug(f'{ip}')
+                    logger.debug(f'{repr(ip)}')
+                    logger.info(f'Found IP:{ip.ipAddress} with id={ip.id}')
+
+    except sa_exc.DataError as e:
+        logger.exception(f'Invalid input: {request}')
+        #print(e.args)
+        #print_exc()
+        context.set_code(StatusCode.INVALID_ARGUMENT)
+        context.set_details(f'[ERROR] Invalid input: {request}')
+        session.rollback()
+        #return ipAddress_pb2.IpAddressResponse(ipAddress=resIpAddress)
+    except err.NoDataFound as e:
+        logger.exception(f'Could not find entry with {request}')
+        #print(e)
+        context.set_code(StatusCode.NOT_FOUND)
+        context.set_details(f'[ERROR] Could not find entry with {request}')
+        session.rollback()
+        #return ipAddress_pb2.IpAddressResponse(ipAddress=resIpAddress)
+    except Exception as e:
+        print("[ERROR] - ")
+        print(e.__class__)
+        print(e.__class__.__name__)
+        print(e)
+        session.rollback()
+        #return ipAddress_pb2.IpAddressResponse(ipAddress=resIpAddress)
+    else:
+        resIpAddress = convertRowToMessage(ip)
+
+        logger.debug(f'IP Found and Object created')
+        session.close()
         logger.debug(f'Leaving function {__name__}.{whoami(currentframe())}')
-        return ip
+        return resIpAddress
     
     return None
 
@@ -82,7 +154,7 @@ def _addIpAddress(session,**columns):
     session.add(newIp)
     session.commit()
 
-    ip = _getIpAddressById(session,newIp.id)
+    ip = getIpAddress()
 
     logger.debug(f'Leaving function {__name__}.{whoami(currentframe())}')
     return ip
