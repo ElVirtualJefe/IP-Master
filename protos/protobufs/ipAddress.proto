@@ -25,7 +25,7 @@ message ipAddress {
     string dataLastSeen = 10;
     string dateLastEdited = 11;
     string dateCreated = 12;
-    bool is_availalbe = 13;
+    bool is_available = 13;
 }
 
 message IpAddressIdRequest {

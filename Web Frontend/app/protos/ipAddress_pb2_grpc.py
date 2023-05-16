@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import app.protos.stubs.ipAddress_pb2 as ipAddress__pb2
+import app.protos.ipAddress_pb2 as ipAddress__pb2
 
 
 class IpAddressStub(object):

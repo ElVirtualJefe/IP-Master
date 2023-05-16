@@ -1,0 +1,39 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Icons {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <button class="btn">
+        <i class="tim-icons icon-double-left"></i> Back to Subnet
+    </button>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                  <h5 class="title">IP Address Details - {{ res["ipAddress"] }}</h5>
+                </div>
+      
+                <div class="card-body">
+                    <ul class="nav nav-pills nav-pills-primary">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#details"> Details </a>
+                        </li>
+                    </ul>
+      
+
+{{ res }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

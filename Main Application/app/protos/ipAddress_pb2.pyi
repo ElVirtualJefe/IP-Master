@@ -29,7 +29,7 @@ class IpAddressSubnetRequest(_message.Message):
     def __init__(self, subnet_id: _Optional[str] = ...) -> None: ...
 
 class ipAddress(_message.Message):
-    __slots__ = ["dataLastSeen", "dateCreated", "dateLastEdited", "description", "hostname", "id", "ipAddress", "is_availalbe", "is_gateway", "macAddress", "owner", "state_id", "subnet_id"]
+    __slots__ = ["dataLastSeen", "dateCreated", "dateLastEdited", "description", "hostname", "id", "ipAddress", "is_available", "is_gateway", "macAddress", "owner", "state_id", "subnet_id"]
     DATALASTSEEN_FIELD_NUMBER: _ClassVar[int]
     DATECREATED_FIELD_NUMBER: _ClassVar[int]
     DATELASTEDITED_FIELD_NUMBER: _ClassVar[int]
@@ -37,7 +37,7 @@ class ipAddress(_message.Message):
     HOSTNAME_FIELD_NUMBER: _ClassVar[int]
     ID_FIELD_NUMBER: _ClassVar[int]
     IPADDRESS_FIELD_NUMBER: _ClassVar[int]
-    IS_AVAILALBE_FIELD_NUMBER: _ClassVar[int]
+    IS_AVAILABLE_FIELD_NUMBER: _ClassVar[int]
     IS_GATEWAY_FIELD_NUMBER: _ClassVar[int]
     MACADDRESS_FIELD_NUMBER: _ClassVar[int]
     OWNER_FIELD_NUMBER: _ClassVar[int]
@@ -50,10 +50,10 @@ class ipAddress(_message.Message):
     hostname: str
     id: str
     ipAddress: str
-    is_availalbe: bool
+    is_available: bool
     is_gateway: bool
     macAddress: str
     owner: str
     state_id: str
     subnet_id: str
-    def __init__(self, id: _Optional[str] = ..., subnet_id: _Optional[str] = ..., ipAddress: _Optional[str] = ..., is_gateway: bool = ..., description: _Optional[str] = ..., hostname: _Optional[str] = ..., macAddress: _Optional[str] = ..., owner: _Optional[str] = ..., state_id: _Optional[str] = ..., dataLastSeen: _Optional[str] = ..., dateLastEdited: _Optional[str] = ..., dateCreated: _Optional[str] = ..., is_availalbe: bool = ...) -> None: ...
+    def __init__(self, id: _Optional[str] = ..., subnet_id: _Optional[str] = ..., ipAddress: _Optional[str] = ..., is_gateway: bool = ..., description: _Optional[str] = ..., hostname: _Optional[str] = ..., macAddress: _Optional[str] = ..., owner: _Optional[str] = ..., state_id: _Optional[str] = ..., dataLastSeen: _Optional[str] = ..., dateLastEdited: _Optional[str] = ..., dateCreated: _Optional[str] = ..., is_available: bool = ...) -> None: ...

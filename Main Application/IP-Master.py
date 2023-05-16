@@ -8,22 +8,6 @@ import logging
 FORMATTER = logging.Formatter('%(asctime)s.%(msecs)dZ %(name)s %(processName)s[%(process)d]: %(levelname)s >>> %(message)s', datefmt='%Y-%m-%dT%H:%M:%S')
     
 
-def _getConfig(configFile=f'{Path(__file__).parent.resolve()}/config.ini'):
-    from configparser import ConfigParser
-
-    logger = logging.getLogger('ip-master')
-    logger.debug('Inside function getConfig()')
-    
-
-    logger.info(f'Loading config from {configFile}')
-    config = ConfigParser()
-    config.read(configFile)
-
-    logger.debug(f'Config loaded...')
-
-    return config
-
-
 def _setup_extra_logging(config):
     from logging.handlers import RotatingFileHandler,SysLogHandler
 
@@ -38,6 +22,7 @@ def _setup_extra_logging(config):
 #    try:
         tmp_dir = config.get('LOG_LOCATION',f'{Path(__file__).parent.resolve()}/logs')
         log_dir = Path(tmp_dir).absolute()
+        Path(log_dir).mkdir(parents=True, exist_ok=True)
 #    except:
 #        log_dir = f'{Path(__file__).parent.resolve()}/logs'
     
@@ -104,7 +89,9 @@ def main():
 
     app_logger.debug(f'Initializing the IP Master appliction...')
 
-    config = _getConfig()
+    from app.config import _getInitialConfig
+    app_logger.debug(f'Get initial configuration file')
+    config = _getInitialConfig(f'{Path(__file__).parent.resolve()}/config.ini')
 
     _setup_extra_logging(config['logging'])
 

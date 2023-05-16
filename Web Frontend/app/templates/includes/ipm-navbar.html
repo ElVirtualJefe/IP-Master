@@ -1,0 +1,39 @@
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" style="max-height: 3rem">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+                <i class="bi bi-yin-yang"></i> IP Master
+            </a>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalSearch">
+                        <i class="bi bi-search text-light"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-target="#page3:not(.show)" data-toggle="collapse">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="collapse">
+                        <i class="bi bi-gear"></i> Administration
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Modal Search box -->
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="modalSearch" aria-hidden="true"> 
+        <div class="modal-dialog" role="document"> 
+            <div class="modal-content"> 
+                <div class="modal-header"> 
+                    <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+                        <input type="search" class="form-control" id="searchFormInputGroup" placeholder="SEARCH" aria-label="Search" /> 
+                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"> 
+                            <i class="bi bi-x-circle"></i> 
+                        </button> 
+                    </form>
+                </div> 
+            </div> 
+        </div> 
+    </div>

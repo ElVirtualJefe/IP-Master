@@ -34,10 +34,10 @@
                     </a>
                     <div class="collapse {% if 'admin' in segment %} show {% endif %}" id="Administration">
                         <ul class="nav">
-                            <li class="{% if 'admin-tables' in segment %} active {% endif %}">
-                                <a href="/admin/tables">
+                            <li class="{% if 'admin-test' in segment %} active {% endif %}">
+                                <a href="/admin/test">
                                     <span class="sidebar-mini-icon">T</span>
-                                    <span class="sidebar-normal"> Tables </span>
+                                    <span class="sidebar-normal"> Test </span>
                                 </a>
                             </li>
                             <li class="{% if 'admin-icons' in segment %} active {% endif %}">
@@ -49,11 +49,43 @@
                         </ul>
                     </div>
                 </li>
-                <li class="{% if 'icons' in segment %} active {% endif %}">
-                    <a href="/icons.html">
-                        <i class="tim-icons icon-atom"></i>
-                        <p>Icons</p>
+                <li class="{% if 'subnets' in segment %} active {% endif %}">
+                    <a data-toggle="collapse" href="#Subnets" class="{% if 'subnets' not in segment %} collapsed {% endif %}" aria-expanded="{% if 'subnets' in segment %} true {% else %} false {% endif %}">
+                        <i class="tim-icons icon-vector"></i>
+                        <p>Subnets <b class="caret"></b> </p>
                     </a>
+                    <div class="collapse {% if 'subnets' in segment %} show {% endif %}" id="Subnets">
+                        <ul class="nav">
+                            <li class="{% if 'subnets' in segment %} active {% endif %}">
+                                <a href="/subnets">
+                                    <span class="sidebar-mini-icon">A</span>
+                                    <span class="sidebar-normal"> All Subnets </span>
+                                </a>
+                            </li>
+                            <li class="{% if 'subnets-sections' in segment %} active {% endif %}">
+                                <a data-toggle="collapse" href="#Sections" class="{% if 'subnets-sections' not in segment %} collapsed {% endif %}" aria-expanded="{% if 'subnets-sections' in segment %} true {% else %} false {% endif %}">
+                                    <span class="sidebar-mini-icon">SE</span>
+                                    <span class="sidebar-normal">Sections <b class="caret"></b></span>
+                                </a>
+                                <div class="collapse {% if 'subnets' in segment %} show {% endif %}" id="Sections">
+                                    <ul class="nav">
+                                        <li class="{% if 'subnets-sections' in segment %} active {% endif %}">
+                                            <a href="javascript:void(0)">
+                                                <span class="sidebar-mini-icon">103</span>
+                                                <span class="sidebar-normal">172.16.103.0/24</span>
+                                            </a>
+                                        </li>
+                                        <li class="{% if 'subnets-sections' in segment %} active {% endif %}">
+                                            <a href="javascript:void(0)">
+                                                <span class="sidebar-mini-icon">105</span>
+                                                <span class="sidebar-normal">172.16.105.0/24</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="{% if 'map' in segment %} active {% endif %}">
                     <a href="/map.html">

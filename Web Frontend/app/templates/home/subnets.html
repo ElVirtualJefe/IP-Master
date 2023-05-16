@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Icons {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-plain">
+          <div class="card-header">
+              <h4 class="card-title">Deaths during the L.A. riots</h4>
+          </div>
+          <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                  {% set itemsToShow = ["full_name","date","type","address","age","gender","race"] %}
+                  <thead class="text-primary">
+                      <tr>
+                          {% for header in itemsToShow %}
+                          <th>
+                              {{ header }}
+                          </th>
+                          {% endfor %}
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {% for row in object_list %}
+                      <tr>
+                          {% for col in itemsToShow %}
+                          <td>
+                              {{ row[col] }}
+                          </td>
+                          {% endfor %}
+                      </tr>
+                      {% endfor %} 
+                  </tbody>
+              </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

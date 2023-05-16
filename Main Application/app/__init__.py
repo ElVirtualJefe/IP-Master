@@ -63,12 +63,10 @@ def test(config = ConfigParser()):
 def server(config = ConfigParser()):
     app_logger.debug(f'Inside function {__name__}.{whoami(currentframe())}')
 
-    SESSION = _create_database_connection(config['postgres'])
-
     app_logger.info(f'Building GRPC Server...')
     import grpc
     from concurrent import futures
-    from app.protos.stubs import ipAddress_pb2_grpc as ip_grpc
+    from app.protos import ipAddress_pb2_grpc as ip_grpc
     from app.implementations import ipAddressServer
 
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=int(config.get('server','MAX_WORKER_THREADS'))))
@@ -89,8 +87,6 @@ def server(config = ConfigParser()):
         server.stop(401)
 
     app_logger.info(f'GRPC Server stopped')
-
-    SESSION.close()
 
     app_logger.debug(f'Leaving {__name__}.{whoami(currentframe())}')
 

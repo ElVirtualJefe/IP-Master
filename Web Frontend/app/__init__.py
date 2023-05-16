@@ -1,11 +1,11 @@
 import logging
-
 app_logger = logging.getLogger(f'ip-master.{__name__}')
 app_logger.debug(f'Entering module {__name__}')
 
-from flask import Flask
 from app.implementations import whoami
 from inspect import currentframe
+
+from flask import Flask
 
 from flask_login import LoginManager
 login_manager = LoginManager()

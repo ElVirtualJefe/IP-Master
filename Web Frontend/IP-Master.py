@@ -89,6 +89,7 @@ def main():
     app_logger.debug(f'Initializing the IP Master appliction...')
 
     from app.config import _getInitialConfig
+    app_logger.debug(f'Get initial configuration file')
     config = _getInitialConfig(f'{Path(__file__).parent.resolve()}/config.ini')
 
     _setup_extra_logging(config['logging'])
@@ -99,9 +100,14 @@ def main():
     try:
         import app
         #app.test(config)
+        from app.implementations import build_clients,clients
+        app_logger.debug(f'clients = {clients}')
+        build_clients()
+        app_logger.debug(f'clients = {clients}')
         app.server(config)
     except:
-        app_logger.exception(f'Something is broken...',exc_info=True)
+#        app_logger.exception(f'Something is broken...',exc_info=True)
+        app_logger.error(f'Something is broken...',exc_info=True)
 
     app_logger.info("Closing IP Master app...")
 
